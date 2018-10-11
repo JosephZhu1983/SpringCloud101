@@ -1,0 +1,48 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: investservice
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: zhuye
+  datasource:
+    url: jdbc:mysql://localhost:3306/p2p?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  main:
+    allow-bean-definition-overriding: true
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    feign:
+      enabled: true
+    sampler:
+      probability: 1.0
+  jpa:
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: false
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8865/eureka/
+    registry-fetch-interval-seconds: 5
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
