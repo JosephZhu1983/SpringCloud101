@@ -31,6 +31,9 @@ zuul:
     project:
       path: /project/**
       serviceId: projectservice
+    host:
+      socket-timeout-millis: 60000
+      connect-timeout-millis: 60000
 
 
 management:

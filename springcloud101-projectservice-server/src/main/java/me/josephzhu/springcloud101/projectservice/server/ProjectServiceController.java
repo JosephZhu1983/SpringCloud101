@@ -4,13 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import me.josephzhu.springcloud101.projectservice.api.Project;
 import me.josephzhu.springcloud101.projectservice.api.ProjectService;
 import me.josephzhu.springcloud101.userservice.api.User;
-import me.josephzhu.springcloud101.userservice.api.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.integration.support.MessageBuilder;
-import org.springframework.messaging.MessageChannel;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;

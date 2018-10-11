@@ -1,6 +1,5 @@
 package me.josephzhu.springcloud101.userservice.server;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import me.josephzhu.springcloud101.userservice.api.User;
 import me.josephzhu.springcloud101.userservice.api.UserService;
 import org.redisson.api.RLock;

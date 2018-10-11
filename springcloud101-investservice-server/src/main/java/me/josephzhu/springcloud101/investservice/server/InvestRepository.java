@@ -1,7 +1,6 @@
 package me.josephzhu.springcloud101.investservice.server;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
