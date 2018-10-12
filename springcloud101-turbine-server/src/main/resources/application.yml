@@ -27,4 +27,4 @@ turbine:
   combine-host: true
   instanceUrlSuffix:
     default: actuator/hystrix.stream
-  app-config: investservice,userservice,projectservice
+  app-config: investservice,userservice,projectservice,projectservice-listener

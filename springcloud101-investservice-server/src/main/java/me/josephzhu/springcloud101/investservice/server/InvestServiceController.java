@@ -33,7 +33,7 @@ public class InvestServiceController implements InvestService {
         Project project = remoteProjectService.getProject(projectId);
         if (project == null) throw new Exception("无效项目ID");
         if (amount.compareTo(project.getRemainAmount()) > 0) throw new Exception("项目余额不足");
-        if (project.getStatus() !=0) throw new Exception("项目不是募集中状不能投资");
+        if (project.getStatus() !=1) throw new Exception("项目不是募集中状不能投资");
 
         InvestEntity investEntity = new InvestEntity();
         investEntity.setInvestorId(investor.getId());

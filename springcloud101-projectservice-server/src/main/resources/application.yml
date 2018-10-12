@@ -14,8 +14,6 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  main:
-    allow-bean-definition-overriding: true
   zipkin:
     base-url: http://localhost:9411
   sleuth:

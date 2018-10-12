@@ -15,7 +15,6 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 @EnableHystrixDashboard
 @EnableCircuitBreaker
 @EnableTurbine
-@EnableEurekaClient
 public class TurbineServerApplication {
 
     public static void main(String[] args) {
