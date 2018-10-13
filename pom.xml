@@ -19,6 +19,7 @@
         <module>springcloud101-zuul-server</module>
         <module>springcloud101-turbine-server</module>
         <module>springcloud101-projectservice-listener</module>
+        <module>springcloud101-admin-server</module>
     </modules>
 
     <parent>
